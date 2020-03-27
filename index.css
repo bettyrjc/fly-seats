@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "lato", sans-serif;
+  margin: 0;
+}
+.category select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+
+  /* appearance: none; */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.showcase {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.showcase li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fly {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: gray;
+
+  margin-right: 5px;
+  transition: all 0.6s;
+}
+
+.fly.selected {
+  fill: yellow;
+}
+.fly.occupied {
+  fill: #ffffff;
+}
+.fly:nth-of-type(2) {
+  margin-right: 2rem;
+}
+p.text {
+  margin: 5px 0;
+}
+p.text span {
+  color: #6feaf6;
+}
